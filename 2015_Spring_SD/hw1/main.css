@@ -1,0 +1,159 @@
+* {
+	box-sizing: border-box;
+	font-family: Microsoft JhengHei;
+}
+html,body {
+	min-width: 1300px;
+	min-height: 700px;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+header,footer {
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	cursor: default;
+}
+header {
+	color: Gray;
+	height: 120px;
+	background-color: Gainsboro;
+	position: relative;
+}
+footer {
+	color: LightGray;
+	height: 150px;
+	padding: 15px 0px 0px 0px;
+	background-color: Gray;
+}
+.portrait {
+	top: 0;
+	bottom: 0;
+	left: 100px;
+	width: 160px;
+	height: 80px;
+	border-radius: 30px;
+	background-size: cover;
+	background-image: url('portrait.png');
+	position: absolute;
+	margin: auto;
+}
+.toolbar {
+	margin: 0px 100px 0px 0px;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+.toolbar > ul {
+	margin: 20px 0px 0px 0px;
+	padding: 6px 12px;
+}
+.toolbar > ul > li {
+	display: inline-block;
+	margin: 0px 24px;
+	padding: 6px 12px;
+	font-size: 20px;
+	cursor: pointer;
+	position: relative;
+}
+.toolbar > ul > li:hover {
+	color: FireBrick;
+}
+.toolbar > ul > li::before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	bottom: 0px;
+	left: 0px;
+	background-color: Red;
+	visibility: hidden;
+	transition-timing-function: ease-in-out;
+	transition-delay: 0s;
+	transition-duration: 0.4s;
+	transform: scaleX(0);
+}
+.toolbar > ul > li:hover::before {
+	visibility: visible;
+	transform: scaleX(1);
+}
+.main {
+	height: calc(100vh - 270px);
+	min-height: 498px;
+	background-color: GhostWhite;
+	background: linear-gradient(to bottom, GhostWhite  , FloralWhite);
+	position: relative;
+	clear: both;
+}
+.contain {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 80%;
+	height: 90%;
+	max-width: 900px;
+	max-height: 528px;
+	margin: auto;
+	padding: 6px 12px;
+	box-shadow: 3px 3px 20px Gray;
+	overflow: auto;
+}
+.contain img {
+	float: right;
+}
+.info {
+	width: 60%;
+	margin: 0px auto 0px auto;
+	border-top: 3px double LightGray;
+	padding: 20px 12px 0px 12px;
+}
+.info > section {
+	display: inline-block;
+	vertical-align: middle;
+}
+.info > section:nth-child(1) {
+	width: 66%;
+	line-height: 2em;
+}
+.info > section:nth-child(2) {
+	width: 33%;
+}
+.infolinks {
+	white-space: nowrap;
+}
+.infolinks > a:link,
+.infolinks > a:active,
+.infolinks > a:visited {
+	color: LightGray;
+	text-decoration: none;
+	cursor: pointer;
+}
+.infolinks > a:hover {
+	color: White;
+}
+.title {
+	font-size: 24px;
+	color: Gray;
+	margin: 0px;
+	padding: 3px 15px;
+}
+table,thead,tbody,td,tr {
+	padding: 6px 12px;
+	text-align: center;
+	vertical-align: middle;
+	border: 1px solid DarkGray;
+	border-collapse: collapse;
+	margin: auto;
+}
+thead {
+	background-color: Gainsboro;
+}
+tbody {
+	background-color: Azure;
+}
+td,tr {
+	padding: 12px 16px;
+}

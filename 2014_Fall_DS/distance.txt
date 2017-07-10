@@ -1,0 +1,11 @@
+Taipei Ilan 4
+Taipei Tainan 8
+Ilan Tainan 11
+Ilan Taoyuan 8
+Taoyuan Hsinchu 7
+Taoyuan Chiayi 4
+Hsinchu Chiayi 14
+Hsinchu Taichung 9
+Taichung Chiayi 10
+Tainan Kaohsiung 7
+Taoyuan Kaohsiung 2

@@ -1,0 +1,14 @@
+void main() {
+    int n;
+    int n2;
+    int n3;
+    float n;
+    float f;
+    float f2;
+    double d;
+    char c;
+    char c;
+    char f;
+    void v;
+    double double;
+}

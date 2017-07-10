@@ -1,0 +1,62 @@
+// A program to sum 1 to N
+procedure SUM is
+    declare
+        // FU: integer;
+        N: integer; // Comment test
+        S: integer;     // Comment test v2
+        I: integer;
+        A : integer  ;
+        B :  integer  ;
+        C :  integer   ;
+        D :  integer;
+        E :  integer ;
+        _A: integer;
+        _0:          integer;
+        _A1:integer;
+        _1A:integer                   ;
+        _:                    integer;
+        ___: integer ;
+
+begin
+    read N;
+
+    A:= 0;
+    B:= 1;
+    C:= 555;
+    D   := 10;
+    E := 6666;
+
+    if A <> 5 then
+        write 0;
+        exit;
+    end if;
+
+    if B = 999 || C >= 7 && D <= 0 then//d
+        write 99;
+        exit;
+    end if;
+
+    if N < 0 then 
+        write -1;
+        exit;
+    else//arqr
+        S := 0;//rwrwrw
+    end if;
+        
+    for I in 1..N loop
+        S := S + I;
+    end loop;
+
+    _A := 9 - -12345;
+    _0 := 5- 4555;
+    _A1 := +5 + +7;
+    _1A:= 1+2;
+
+    for E in 0..0 loop
+        if !(___ % 5 = 0) then
+            _ := 6/2(2+1);
+        end if;
+    end loop;
+        //fdfdf
+    write S;
+end;/////////

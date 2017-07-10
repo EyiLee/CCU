@@ -1,0 +1,175 @@
+html ,body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    height: 42px;
+    line-height: 42px;
+    margin: 0;
+    padding: 0 16px;
+    background-color: #303030;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0;
+    padding: 0;
+    width: 100px;
+    height: 42px;
+    line-height: 42px;
+    list-style: none;
+    color: azure;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #303030;
+    cursor: pointer;
+}
+
+.dropdown:hover {
+    background-color: #4CAF50;
+}
+
+.dropdown li {
+    position: relative;
+    display: none;
+    background-color: #303030;
+    width: 100px;
+    height: 42px;
+    line-height: 42px;
+    z-index: 1;
+}
+
+.dropdown:hover li {
+    display: block;
+}
+
+.enlarge li:hover {
+    transform: scale(1.2);
+    background-color: hotpink;
+    z-index: 2;
+}
+
+.moving li:hover {
+    transform: translateX(-30px);
+}
+
+.rotation li:hover {
+    transform: rotate(-10deg);
+    background-color: brown;
+}
+
+.leaning li:hover {
+    transform: skewX(10deg);
+    transform-origin: 50% 100%;
+    background-color: cornflowerblue;
+}
+
+.links {
+    float: right;
+}
+
+.facebook {
+    transition: transform 1s;
+}
+
+.facebook:hover {
+    transform: scale(1.5);
+}
+
+.twitter {
+    transition: transform 1s;
+}
+
+.twitter:hover {
+    transform: scaleX(2);
+}
+
+.linkedin {
+    transition: transform 1s;
+}
+
+.linkedin:hover {
+    transform: rotate(180deg);
+}
+
+.card {
+    margin: 40px auto 0px auto;
+    border-collapse: collapse;
+    box-shadow: 10px 10px 5px darkgray;
+}
+
+.card tr,
+.card td {
+    overflow: hidden;
+    border: solid black 1px;
+}
+
+.card .card-title td:first-child {
+    text-align: center;
+    line-height: 36px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: blueviolet;
+}
+
+.card .card-content td {
+    text-align: left;
+    vertical-align: top;
+}
+
+.card .card-content td:first-child {
+    background-color: gold;
+}
+
+.card .card-content td:nth-child(2):hover {
+    background-color: lawngreen;
+}
+
+.man1 {
+    transition: transform 1s;
+}
+
+.man1:hover {
+    transform: translateX(60px);
+}
+
+.man2 {
+    transition: transform 1s;
+}
+
+.man2:hover {
+    transform: translateY(-60px);
+}
+
+footer {
+    margin: 40px auto 0px auto;
+    width: 100%;
+    height: 42px;
+    line-height: 42px;
+    background-color: gray;
+    overflow: hidden;
+}
+
+.marquee {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    margin: 0 auto;
+    animation-name: running;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+@keyframes running {
+    0% {
+        left: 40%;
+    }
+    100% {
+        left: -40%;
+    }
+}

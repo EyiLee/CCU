@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name=viewport content="width=device-width, initial-scale=1">
+		<title>電腦軟體設計 - 個人檔案</title>
+		<link rel="icon" href="correct.png" type="image/png" sizes="32x32">
+		<link rel="stylesheet" href="main.css">
+		<script>
+			function loadPage(tar,href) {
+				var xmlhttp = new XMLHttpRequest();
+				xmlhttp.open("GET", href, false);
+				xmlhttp.send();
+				document.getElementById(tar).innerHTML = xmlhttp.responseText;
+			}
+		</script>
+	</head>
+	<body onload="loadPage('load','intro.html');">
+		<header>
+			<a href="/~lchb102u/hw1"  class="portrait"></a>
+			<nav class="toolbar">
+				<ul>
+					<li onClick="loadPage('load','intro.html');">個人檔案</li>
+					<li onClick="loadPage('load','lesson.html');">我的課表</li>
+					<li>作業清單</li>
+					<li>修課心得</li>
+				</ul>
+			</nav>
+		</header>
+		<section class="main">
+			<section id="load" class="contain">
+			</section>
+		</section>
+		<footer>
+			<section class="info">
+				<section>
+					<span>課程：電腦軟體設計 製作</span><br>
+					<span>學生：李佳祥</span><br>
+					<span><small>Copyright©國立中正大學資訊工程學系</small></span>
+				</section>
+				<section class="infolinks">
+					｜ <a href="http://www.cs.ccu.edu.tw" target="_blank">中正資工</a> ｜ <a href="http://bach.ccu.edu.tw/tools/page/show_page.php?page_url=/Site/softwaredesign/" target="_blank">課程網頁</a> ｜ 授課教師：吳昇老師
+				</section>
+			</section>
+		</footer>
+	</body>
+</html>
